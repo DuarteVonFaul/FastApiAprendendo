@@ -13,11 +13,12 @@
     poetry add fastapi[standard]
     poetry add --group dev ruff
     poetry add --group dev pytest pytest-cov
+    poetry add --group dev taskipy
 
 ## PyTest Commands
 
-    pytest //Initialize test
-    coverage html //Making an html page from test
+    pytest          //Initialize test
+    coverage html   //Making an html page from test
 
 ### Poetry Configuration
 
@@ -53,6 +54,17 @@
         [tool.ruff.lint]
         preview = true
         select = ['I', 'F', 'E', 'W', 'PL', 'PT']
+
+## Taskipy commands
+
+    tasking <command>
+
+### Poetry configurarion
+
+    [tool.taskipy.tasks]
+    run = 'fastapi dev api/app.py'
+    test = 'pytest -s -x --cov=aou -vv'
+    post_test = 'converage html'
 
 
 ## Initialize project
