@@ -40,4 +40,6 @@ select = ['I', 'F', 'E', 'W', 'PL', 'PT']
 run = 'fastapi dev api/app.py'
 test = 'pytest -s -x --cov=aou -vv'
 post_test = 'converage html'
+lint = 'ruff check . && ruff check . --fix'
+format = 'ruff check . && ruff format .'
 
