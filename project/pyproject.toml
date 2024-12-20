@@ -24,7 +24,6 @@ build-backend = "poetry.core.masonry.api"
 pythonpath = '.'
 addopts = '-p no:warnings'
 
-
 [tool.ruff]
 line-length = 79
 extend-exclude = ['migrations']
@@ -36,4 +35,9 @@ quote-style = 'single'
 [tool.ruff.lint]
 preview = true
 select = ['I', 'F', 'E', 'W', 'PL', 'PT']
+
+[tool.taskipy.tasks]
+run = 'fastapi dev api/app.py'
+test = 'pytest -s -x --cov=aou -vv'
+post_test = 'converage html'
 
