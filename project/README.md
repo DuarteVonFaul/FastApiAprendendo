@@ -1,9 +1,9 @@
 # Project FastApi Learning
 
-## Dependences
+## Dependencies
 
 * FastApi
 
-## Install Dependences
+## Install Dependencies
 
     poetry add FastApi
