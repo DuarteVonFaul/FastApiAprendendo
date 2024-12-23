@@ -7,6 +7,7 @@
 * PyTest
 * PyTest-cov
 * Taskipy
+* pydantic[email]
 
 ## Install dependencies
 
@@ -14,6 +15,7 @@
     poetry add --group dev ruff
     poetry add --group dev pytest pytest-cov
     poetry add --group dev taskipy
+    poetry add "pydantic[email]"
 
 ## PyTest Commands
 
