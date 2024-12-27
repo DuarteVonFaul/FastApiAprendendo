@@ -10,6 +10,11 @@ class UserSChema(BaseModel):
     password:str
     email:EmailStr
 
+class UserDB(UserSChema):
+    id: int
+    ...
+
 class UserPublic(BaseModel):
+    id: int
     username:str
     email:EmailStr
