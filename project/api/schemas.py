@@ -6,15 +6,17 @@ class Message(BaseModel):
 
 
 class UserSChema(BaseModel):
-    username:str
-    password:str
-    email:EmailStr
+    username: str
+    password: str
+    email: EmailStr
+
 
 class UserDB(UserSChema):
     id: int
     ...
 
+
 class UserPublic(BaseModel):
     id: int
-    username:str
-    email:EmailStr
+    username: str
+    email: EmailStr
