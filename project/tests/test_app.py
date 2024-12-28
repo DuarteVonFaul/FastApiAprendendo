@@ -55,3 +55,18 @@ def test_update_user(client):
         'id': 1
         }
     ...
+
+def test_update_user_not_found_error(client):
+
+    response = client.put('/users/2',
+        json={
+            'username': 'testeuser',
+            'password': 'pass123',
+            'email': 'user@exemple.com',
+        },)
+
+    assert response.status_code == HTTPStatus.NOT_FOUND
+
+    assert response.json() == {
+        'detail': 'USER NOT FOUND'
+        }
