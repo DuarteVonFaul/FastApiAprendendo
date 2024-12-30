@@ -8,6 +8,7 @@
 * PyTest-cov
 * Taskipy
 * pydantic[email]
+* SQLAlchemy
 
 ## Install dependencies
 
@@ -16,6 +17,7 @@
     poetry add --group dev pytest pytest-cov
     poetry add --group dev taskipy
     poetry add "pydantic[email]"
+    poetry add sqlalchemy
 
 ## PyTest Commands
 
