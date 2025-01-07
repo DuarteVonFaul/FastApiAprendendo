@@ -16,7 +16,13 @@ def client():
 @pytest.fixture()
 def session():
 
-    database = DataBase('sqlite:///test_database.db')
+    database = DataBase('sqlite:///:memory:')
     database.migration()
-    return database.mySession()
+    
+    with database.mySession() as session:
+        yield session
+
+    database.drop()
+    
+
     
