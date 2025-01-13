@@ -10,6 +10,7 @@
 * pydantic[email]
 * SQLAlchemy
 * Pydantic Settings
+* Alembic
 
 ## Install dependencies
 
@@ -20,6 +21,7 @@
     poetry add "pydantic[email]"
     poetry add sqlalchemy
     poetry add pydantic-settings
+    poetry add alembic
 
 ## PyTest Commands
 
