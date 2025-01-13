@@ -9,6 +9,7 @@
 * Taskipy
 * pydantic[email]
 * SQLAlchemy
+* Pydantic Settings
 
 ## Install dependencies
 
@@ -18,6 +19,7 @@
     poetry add --group dev taskipy
     poetry add "pydantic[email]"
     poetry add sqlalchemy
+    poetry add pydantic-settings
 
 ## PyTest Commands
 
