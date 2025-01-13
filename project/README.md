@@ -22,6 +22,11 @@
     poetry add sqlalchemy
     poetry add pydantic-settings
     poetry add alembic
+## Akembic commands
+
+    alembic init migrations
+    alembic revision --autogenerate -m "<message>"
+    alembic upgrade head
 
 ## PyTest Commands
 
